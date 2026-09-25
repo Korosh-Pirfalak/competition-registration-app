@@ -222,7 +222,7 @@ npm run dev
 
 پس از فعال‌سازی GitHub Pages، دموی آنلاین پروژه از اینجا در دسترس خواهد بود:
 
-**YOUR_GITHUB_PAGES_URL**
+**https://korosh-pirfalak.github.io/competition-registration-app**
 
 ---
 
