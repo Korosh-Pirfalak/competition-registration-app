@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-  <a href="YOUR_GITHUB_PAGES_URL">
+  <a href="https://korosh-pirfalak.github.io/competition-registration-app/">
     <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit-success?style=for-the-badge">
   </a>
 </p>
