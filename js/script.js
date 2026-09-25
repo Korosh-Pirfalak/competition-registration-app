@@ -147,41 +147,41 @@ function renderParticipantCard(
   participantsList.insertAdjacentHTML(
     "beforeend",
     `
-        <div
-            class="flex items-center justify-between rounded-xl border border-white/10 bg-slate-800/50 p-5"
-            data-index="${index}"
-        >
-            <div class="flex gap-5">
-                <div
-                    class="flex h-20 w-20 items-center justify-center rounded-full bg-cyan-950 text-3xl font-bold"
-                >
-                    ${participant.fullName[0] || ""}${participant.fullName[1] || ""}
-                </div>
+      <div
+        class="flex flex-col gap-3 rounded-xl border border-white/10 bg-slate-800/50 p-3 sm:flex-row sm:items-center sm:justify-between sm:gap-4 sm:p-5"
+        data-index="${index}"
+      >
+        <div class="flex min-w-0 gap-4 sm:gap-5">
+          <div
+            class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-cyan-950 text-2xl font-bold sm:h-20 sm:w-20 sm:text-3xl"
+          >
+            ${participant.fullName[0] || ""}${participant.fullName[1] || ""}
+          </div>
 
-                <div class="flex flex-col gap-1">
-                    <span>
-                        ${participant.fullName}
-                    </span>
+          <div class="flex min-w-0 flex-col gap-1">
+            <span>
+              ${participant.fullName}
+            </span>
 
-                    <span>
-                        ${participant.age} سال | ${participant.track}
-                    </span>
+            <span>
+              ${participant.age} سال | ${participant.track}
+            </span>
 
-                    <span>
-                        ${participant.email}
-                    </span>
-                </div>
-            </div>
-
-            <button
-                type="button"
-                data-action="delete"
-                class="cursor-pointer rounded-xl bg-red-800/20 px-7 py-3 text-left text-red-600"
-            >
-                حذف
-            </button>
+            <span class="break-all">
+              ${participant.email}
+            </span>
+          </div>
         </div>
-        `,
+
+        <button
+          type="button"
+          data-action="delete"
+          class="cursor-pointer rounded-xl bg-red-800/20 px-7 py-3 text-center text-red-600"
+        >
+          حذف
+        </button>
+      </div>
+    `,
   );
 }
 
